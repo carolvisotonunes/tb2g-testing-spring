@@ -5,9 +5,8 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class BaseConfig {
-
-    @Bean
-    HearingInterpreter hearingInterpreter(WordProducer wordProducer){
+     @Bean
+    HearingInterpreter hearingInterpreter(WordProducer wordProducer) {
         return new HearingInterpreter(wordProducer);
     }
 }
