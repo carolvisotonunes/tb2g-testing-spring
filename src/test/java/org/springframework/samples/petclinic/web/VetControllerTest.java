@@ -10,7 +10,6 @@ import org.springframework.samples.petclinic.model.Vet;
 import org.springframework.samples.petclinic.model.Vets;
 import org.springframework.samples.petclinic.service.ClinicService;
 import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.test.web.servlet.MockMvcBuilder;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
 import java.util.ArrayList;
@@ -25,7 +24,6 @@ import static org.mockito.BDDMockito.then;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
-
 @ExtendWith(MockitoExtension.class)
 class VetControllerTest {
 
@@ -36,7 +34,6 @@ class VetControllerTest {
     Map<String, Object> model;
 
     MockMvc mockMvc;
-
 
     @InjectMocks
     VetController controller;
